@@ -5,18 +5,19 @@ Este projeto utiliza um Arduino UNO para controlar automaticamente uma persiana 
 ## Índice
 
 - [Visão Geral](#visão-geral)
-- [Componentes](#componentes)
+- [Componentes](#componentes-do-sistema)
+- [Vídeo Demonstrativo](#funcionamento)
 - [Considerações](#considerações)
 
 ## Visão Geral
 
-O sistema foi desenvolvido para automatizar o controle de uma persiana, ajustando sua abertura de acordo com as condições ambientais. São utilizados:
+O sistema foi desenvolvido para automatizar o controle de uma persiana, ajustando sua posição de acordo com as condições ambientais. São utilizados:
 - **Sensor de Chuva:** para detectar a presença de chuva.
 - **Sensor de Luminosidade (LDR):** para monitorar os níveis de luz.
 
-Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo driver ULN2003, movimenta a persiana realizando um número determinado de voltas, que pode ser ajustado conforme necessário.
+Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo driver ULN2003, movimenta uma roldana que está integrada ao sistema de abertura daa persiana realizando um número determinado de voltas para abrir e fechar a persiana, esse número pode ser ajustado conforme necessário.
 
-## Componentes
+## Componentes do Sistema
 
 - **Arduino UNO**
 - **Motor de Passo 28BYJ-48** com driver **ULN2003**
@@ -25,6 +26,10 @@ Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo 
 - **Resistor (10kΩ)**
 - **Protoboard**
 - **Jumpers**
+- **Persiana**
+- **Roldana**
+## Funcionamento
+
 
 ## Considerações
 
