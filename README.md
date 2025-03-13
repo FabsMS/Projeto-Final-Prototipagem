@@ -15,7 +15,7 @@ O sistema foi desenvolvido para automatizar o controle de uma persiana, ajustand
 - **Sensor de Chuva:** para detectar a presença de chuva.
 - **Sensor de Luminosidade (LDR):** para monitorar os níveis de luz.
 
-Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo driver ULN2003, movimenta uma roldana que está integrada ao sistema de abertura daa persiana realizando um número determinado de voltas para abrir e fechar a persiana, esse número pode ser ajustado conforme necessário.
+Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo driver ULN2003, movimenta uma roldana que está integrada ao mecanismo de abertura da persiana realizando um número determinado de voltas para abrir e fechar a persiana, esse número pode ser ajustado conforme necessário.
 
 ## Componentes do Sistema
 
