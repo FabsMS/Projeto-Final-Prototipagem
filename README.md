@@ -35,4 +35,4 @@ Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo 
 
 - O projeto é ideal para automatizar a abertura e fechamento de persianas com base em condições ambientais.
 - O número de voltas do motor pode ser ajustado no código para adequar a movimentação ao mecanismo da persiana.
-- É importante calibrar os sensores para garantir o acionamento correto da persiana conforme o ambiente.
+- É importante calibrar os sensores para garantir o acionamento correto da persiana conforme o ambiente em que o protótipo está.
