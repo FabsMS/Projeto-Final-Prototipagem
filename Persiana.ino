@@ -25,27 +25,28 @@ void setup() {
   Serial.begin(9600);  
   MotorDePasso.setSpeed(18); //Velocidade de rotações por minuto
 
-void loop() {
-  // Leitura dos sensores
-  int NivelChuva = digitalRead(PinoSensorChuva);
-  int NivelLuz = analogRead(PinoSensorLuminosidade);
-  
-  Serial.print("Chuva: ");
-  Serial.print(NivelChuva);
-  Serial.print(" | Luz: ");
-  Serial.println(NivelLuz);
-  
-  // Se estiver chovendo OU estiver muito claro, fecha a persiana
-  if ((NivelChuva == LOW || NivelLuz > 350) && !isClosed) {
-    Serial.println("Fechando persiana...");
-    MotorDePasso.step(-passosParaVoltaCompleta * NumeroVoltas);
-    isClosed = true;
-  }
-  // Se não estiver chovendo E não estiver muito claro, abre a persiana
-  else if ((NivelChuva == HIGH && NivelLuz <= 350) && isClosed) {
-    Serial.println("Abrindo persiana...");
-    MotorDePasso.step(passosParaVoltaCompleta * NumeroVoltas);
-    isClosed = false;
-  }
-  
-  delay(1000); // uma leitura a cada segundo
+  void loop() {
+    // Leitura dos sensores
+    int NivelChuva = digitalRead(PinoSensorChuva);
+    int NivelLuz = analogRead(PinoSensorLuminosidade);
+    
+    Serial.print("Chuva: ");
+    Serial.print(NivelChuva);
+    Serial.print(" | Luz: ");
+    Serial.println(NivelLuz);
+    
+    // Se estiver chovendo OU estiver muito claro, fecha a persiana
+    if ((NivelChuva == LOW || NivelLuz > 350) && !isClosed) {
+      Serial.println("Fechando persiana...");
+      MotorDePasso.step(passosParaVoltaCompleta * NumeroVoltas);
+      isClosed = true;
+    }
+    // Se não estiver chovendo E não estiver muito claro, abre a persiana
+    else if ((NivelChuva == HIGH && NivelLuz <= 350) && isClosed) {
+      Serial.println("Abrindo persiana...");
+      MotorDePasso.step(-passosParaVoltaCompleta * NumeroVoltas);
+      isClosed = false;
+    }
+    
+    delay(1000); // uma leitura a cada segundo
+  } 

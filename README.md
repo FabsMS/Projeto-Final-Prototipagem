@@ -18,6 +18,7 @@ O sistema foi desenvolvido para automatizar o controle de uma persiana, ajustand
 Com base nas leituras desses sensores, o motor de passo 28BYJ-48, acionado pelo driver ULN2003, movimenta uma roldana que está integrada ao mecanismo de abertura da persiana realizando um número determinado de voltas para abrir e fechar a persiana, esse número pode ser ajustado conforme necessário.
 
 ## Objetivo
+
 O objetivo do projeto é desenvolver um protótipo funcional de uma persiana automática que utiliza sensores de luminosidade e chuva para ajustar sua posição de forma inteligente, melhorando a qualidade de vida dos usuários, otimizando o consumo de energia, poupando seu tempo e protegendo o ambiente interno de condições climáticas adversas, sem a necessidade da realização de uma tarefa manual repetidas vezes durante o dia.
 
 ## Componentes do Sistema
@@ -31,8 +32,14 @@ O objetivo do projeto é desenvolver um protótipo funcional de uma persiana aut
 - **Jumpers**
 - **Persiana**
 - **Roldana**
+
 ## Funcionamento
 
+Para visualizar o funcionamento do projeto, acesse o vídeo demonstrativo no link abaixo:  
+
+🔗 **[Vídeo do Projeto](https://youtu.be/MzBqjbwzDJk)**  
+
+No vídeo, é possível ver o sistema em ação, demonstrando como os sensores detectam as condições ambientais e acionam a persiana automaticamente.
 
 ## Considerações
 
